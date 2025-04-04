@@ -914,7 +914,7 @@ Banner Style
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 236px 0px 130px 0px;
+  padding: 200px 0px 130px 0px;
   position: relative;
   overflow: hidden;
 }
@@ -2054,7 +2054,7 @@ responsive
     z-index: -1;
   }
   .subscribe .inner-content {
-    padding: 60px 30px 100px 30px;
+    padding: 20px 30px 100px 30px;
   }
   .subscribe .inner-content form input {
     width: 49%;
