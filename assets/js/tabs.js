@@ -1,7 +1,4 @@
-/*! jQuery UI - v1.11.2 - 2014-10-16
-* http://jqueryui.com
-* Includes: core.js, widget.js, mouse.js, position.js, accordion.js, autocomplete.js, button.js, datepicker.js, dialog.js, draggable.js, droppable.js, effect.js, effect-blind.js, effect-bounce.js, effect-clip.js, effect-drop.js, effect-explode.js, effect-fade.js, effect-fold.js, effect-highlight.js, effect-puff.js, effect-pulsate.js, effect-scale.js, effect-shake.js, effect-size.js, effect-slide.js, effect-transfer.js, menu.js, progressbar.js, resizable.js, selectable.js, selectmenu.js, slider.js, sortable.js, spinner.js, tabs.js, tooltip.js
-* Copyright 2014 jQuery Foundation and other contributors; Licensed MIT */
+
 
 (function( factory ) {
 	if ( typeof define === "function" && define.amd ) {
@@ -14,19 +11,7 @@
 		factory( jQuery );
 	}
 }(function( $ ) {
-/*!
- * jQuery UI Core 1.11.2
- * http://jqueryui.com
- *
- * Copyright 2014 jQuery Foundation and other contributors
- * Released under the MIT license.
- * http://jquery.org/license
- *
- * http://api.jqueryui.com/category/ui-core/
- */
 
-
-// $.ui might exist from components with no dependencies, e.g., $.ui.position
 $.ui = $.ui || {};
 
 $.extend( $.ui, {
@@ -14566,20 +14551,14 @@ var sortable = $.widget("ui.sortable", $.ui.mouse, {
 			pageY = event.pageY,
 			scroll = this.cssPosition === "absolute" && !(this.scrollParent[0] !== document && $.contains(this.scrollParent[0], this.offsetParent[0])) ? this.offsetParent : this.scrollParent, scrollIsRootNode = (/(html|body)/i).test(scroll[0].tagName);
 
-		// This is another very weird special case that only happens for relative elements:
-		// 1. If the css position is relative
-		// 2. and the scroll parent is the document or similar to the offset parent
-		// we have to refresh the relative offset during the scroll so there are no jumps
+	
 		if(this.cssPosition === "relative" && !(this.scrollParent[0] !== document && this.scrollParent[0] !== this.offsetParent[0])) {
 			this.offset.relative = this._getRelativeOffset();
 		}
 
-		/*
-		 * - Position constraining -
-		 * Constrain the position to a mix of grid, containment.
-		 */
 
-		if(this.originalPosition) { //If we are not dragging yet, we won't check for options
+
+		if(this.originalPosition) { 
 
 			if(this.containment) {
 				if(event.pageX - this.offset.click.left < this.containment[0]) {
@@ -14629,11 +14608,7 @@ var sortable = $.widget("ui.sortable", $.ui.mouse, {
 
 		a ? a[0].appendChild(this.placeholder[0]) : i.item[0].parentNode.insertBefore(this.placeholder[0], (this.direction === "down" ? i.item[0] : i.item[0].nextSibling));
 
-		//Various things done here to improve the performance:
-		// 1. we create a setTimeout, that calls refreshPositions
-		// 2. on the instance, we have a counter variable, that get's higher after every append
-		// 3. on the local scope, we copy the counter variable, and check in the timeout, if it's still the same
-		// 4. this lets only the last addition to the timeout stack through
+
 		this.counter = this.counter ? ++this.counter : 1;
 		var counter = this.counter;
 
@@ -14648,13 +14623,11 @@ var sortable = $.widget("ui.sortable", $.ui.mouse, {
 	_clear: function(event, noPropagation) {
 
 		this.reverting = false;
-		// We delay all events that have to be triggered to after the point where the placeholder has been removed and
-		// everything else normalized again
+
 		var i,
 			delayedTriggers = [];
 
-		// We first have to update the dom position of the actual currentItem
-		// Note: don't do it if the current item is already removed (by a user), or it gets reappended (see #4088)
+
 		if(!this._noFinalSort && this.currentItem.parent().length) {
 			this.placeholder.before(this.currentItem);
 		}
