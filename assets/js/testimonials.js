@@ -1,24 +1,24 @@
 const testimonials = [
     {
-      name: "Luna John",
-      role: "UX Designer",
-      image: "https://img.freepik.com/premium-vector/avatar-profile-icon-flat-style-female-user-profile-vector-illustration-isolated-background-women-profile-sign-business-concept_157943-38866.jpg",
+      name: "Mamta Rani",
+      role: "Business Woman",
+      image: "https://namratauniversal.com/img/review/Mamta%20Rani.jpg",
       rating: 5,
-      testimonial: "We were so impressed with the work they did for us. They were able to take our vision and turn it into a reality, and they did it all on time and within budget. We would highly recommend them to anyone looking for a reliable partner."
+      testimonial: "Nice Experience with Namrata universal. Really satisfied with services. I can say this is top website design company in noida."
     },
     {
-      name: "Luna John",
-      role: "UX Designer",
-      image: "https://img.freepik.com/premium-vector/avatar-profile-icon-flat-style-female-user-profile-vector-illustration-isolated-background-women-profile-sign-business-concept_157943-38866.jpg",
+      name: "Suraj",
+      role: "Human",
+      image: "https://namratauniversal.com/img/review/suraj.jpg",
       rating: 4,
-      testimonial: "We were looking for a company that could help us develop a new website that was both visually appealing and user-friendly. We are so happy with the results, and we would highly recommend them to anyone looking for a new website."
+      testimonial: "Namrata universal are the best website creater , I have ever and I would suggest more n more people for website designing."
     },
     {
-      name: "Luna John",
-      role: "UX Designer",
-      image: "https://img.freepik.com/premium-vector/avatar-profile-icon-flat-style-female-user-profile-vector-illustration-isolated-background-women-profile-sign-business-concept_157943-38866.jpg",
+      name: "Kriti Dixit",
+      role: "Business Woman",
+      image: "https://namratauniversal.com/img/review/Kritee%20Dixit.jpg",
       rating: 5,
-      testimonial: "We were looking for a company that could help us with our branding. We needed a website and marketing materials. They were able to create a brand identity that we loved. They worked with us to develop a logo that represented our company."
+      testimonial: "Team Namrata universal really good service provider. completely down to earth,Completely satisfied with your service."
     }
   ];
   
@@ -26,7 +26,7 @@ const testimonials = [
 
   testimonials.forEach(client=>{
     testimonialCard.innerHTML += `
-    <div class="col-12 col-md-4 ">
+    <div class="col-12 col-md-4 " data-aos="zoom-in">
           <div class="card border-0 border-bottom border-primary shadow-sm">
             <div class="card-body p-4 p-xxl-5 bg-light ">
               <figure>

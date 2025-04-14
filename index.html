@@ -9,7 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
-    <link rel="shortcut icon" href="https://beautiful-dasik-ad7383.netlify.app/assets/cutLogo-DWbnUrBd.png" type="image/x-icon">
+  <link rel="shortcut icon" href="https://beautiful-dasik-ad7383.netlify.app/assets/cutLogo-DWbnUrBd.png"
+    type="image/x-icon">
   <title>Namrata universal - Best IT Solutions Provide</title>
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -18,7 +19,14 @@
   <link rel="stylesheet" href="assets/css/templatemo-onix-digital.css">
   <link rel="stylesheet" href="assets/css/animated.css">
   <link rel="stylesheet" href="assets/css/owl.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+<style>
+  /* .bg_color {
+    background-color: rgb(31 73 98 / var(--tw-bg-opacity, 1));
+    padding: 20px;
+  } */
+</style>
 
 <body>
   <!-- ***** Preloader Start ***** -->
@@ -35,7 +43,7 @@
   <!-- ***** Preloader End ***** -->
 
   <!-- ***** Header Area Start ***** -->
-  <header class="header-area header-sticky wow slideInDown " data-wow-duration="0.75s" data-wow-delay="0s">
+  <header class="header-area position-fixed wow slideInDown " data-wow-duration="0.75s" data-wow-delay="0s">
     <div class="container-fluid">
       <div class="row">
         <div class="col-12">
@@ -47,12 +55,12 @@
             <!-- ***** Logo End ***** -->
             <!-- ***** Menu Start ***** -->
             <ul class="nav">
-              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
-              <li class="scroll-to-section"><a href="#services">Services</a></li>
-              <li class="scroll-to-section"><a href="#about">About</a></li>
+              <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="services.html">Services</a></li>
+              <li class="scroll-to-section"><a href="about.html">About</a></li>
               <li class="scroll-to-section"><a href="#portfolio">Portfolio</a></li>
               <li class="scroll-to-section"><a href="#video">Videos</a></li>
-              <li class="scroll-to-section"><a href="#contact">Contact Us</a></li>
+              <li class="scroll-to-section"><a href="contact.html">Contact Us</a></li>
               <li class="scroll-to-section">
                 <div class="main-red-button-hover"><a href="#contact">Contact Us Now</a></div>
               </li>
@@ -220,7 +228,7 @@
     </div>
   </div>
 
-  <div id="portfolio" class="our-portfolio section">
+  <div id="portfolio" class="our-portfolio section bg_color">
     <div class="portfolio-left-dec">
       <img src="assets/images/portfolio-left-dec.png" alt="">
     </div>
@@ -234,7 +242,7 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid ">
       <div class="row">
         <div class=" clients" id="clientCards">
 
@@ -295,7 +303,7 @@
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <input type="surname" name="surname" id="surname" placeholder="Surname" autocomplete="on" required>
+                  <input type="number" name="phone" id="phone" placeholder="Contact No" autocomplete="on" required>
                 </fieldset>
               </div>
               <div class="col-lg-12">
@@ -306,12 +314,12 @@
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <input type="text" name="website" id="website" placeholder="Your Website URL" required="">
+                  <input type="text" name="website" id="website" placeholder="Enter Your Meaasge" required="">
                 </fieldset>
               </div>
               <div class="col-lg-12">
                 <fieldset>
-                  <button type="submit" id="form-submit" class="main-button">Submit Request</button>
+                  <button type="submit" id="form-submit" class="main-button">Submit</button>
                 </fieldset>
               </div>
             </div>
@@ -427,9 +435,13 @@
   <script src="assets/js/SoftwareCard.js"></script>
   <script src="assets/js/clientCards.js"></script>
   <script src="assets/js/testimonials.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
   <script>
+    AOS.init();
+  </script>
 
+  <script>
 
 
     // Acc

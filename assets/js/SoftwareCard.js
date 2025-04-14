@@ -38,14 +38,18 @@ const softwareData = [
       title: "Programming Software",
       image: "https://img.freepik.com/free-photo/rear-view-programmer-working-all-night-long_1098-18697.jpg?ga=GA1.1.1235659308.1743403253&semt=ais_hybrid&w=740",
       description: "Programming software is a type of computer program that allows users to create, edit and modify code for computing systems. It consists of various tools such as text editors, compilers, debuggers and interpreters that help developers write high-quality code in an efficient manner"
-    }
+    },{
+      title: "Billing Software",
+      image: "https://img.freepik.com/free-photo/invoice-bill-paid-payment-financial-account-concept_53876-122994.jpg?ga=GA1.1.1235659308.1743403253&semt=ais_hybrid&w=740",
+      description: "Billing software, also known as invoicing software, is a type of computer program that helps businesses generate, manage, and track invoices. It streamlines the billing process by automating many of the tasks involved in creating and managing invoices. Additionally,"
+    },
   ];
   
     const container = document.getElementById("cardContainer");
   
     softwareData.forEach(card => {
       container.innerHTML += `
-        <div class="col-lg-4 mb-4">
+        <div class="col-lg-4 mb-4" data-aos="zoom-in">
           <div class="card">
             <img src="${card.image}" alt="" class="card-img-top">
             <div class="card-body">
